@@ -13,28 +13,46 @@
 
   <section>
 
-    <div id="res"></div>
+    <div id="res">
+ 
+    </div>
 
-    <ul class="list-buttons">
-      <li><button class="numbers" id="b1">1</button></li>
-      <li><button class="numbers" id="b4">4</button></li>
-      <li><button class="numbers" id="b7">7</button></li>
-      <li><button class="op" id="b-">-</button></li>
-      <li><button class="numbers" id="b2">2</button></li>
-      <li><button class="numbers" id="b5">5</button></li>
-      <li><button class="numbers" id="b8">8</button></li>
-      <li><button class="numbers" id="b0">0</button></li>
-      <li><button class="numbers" id="b3">3</button></li>
-      <li><button class="numbers" id="b6">6</button></li>
-      <li><button class="numbers" id="b9">9</button></li>
-      <li><button class="op" id="b+" onclick="cal()">+</button></li>
-    </ul>
+    <table>
+      <tr>
+        <td><button class="btn" onclick="clean()">c</button></td>
+        <td><button id="back" class="btn" onclick="backspace()">⌫</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">/</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">*</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="insert(this.innerText)">7</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">8</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">9</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="insert(this.innerText)">4</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">5</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">6</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn" onclick="insert(this.innerText)">1</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">2</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">3</button></td>
+        <td rowspan="2"><button id="igual" class="btn" onclick="calc()">=</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button id="zero" class="btn" onclick="insert(this.innerText)">0</button></td>
+        <td><button class="btn" onclick="insert(this.innerText)">.</button></td>
+      </tr>
+    </table>
 
-    <button id="calcularbutton">Calcular</button>
+    
   </section>
 
   <footer>
-    Site feito por <a href="https://github.com/HerbertDuarte">Herbert Duarte</a>
+    Site desenvolvido por <a href="https://github.com/HerbertDuarte">Herbert Duarte</a>
   </footer>
 </body>
 </html>

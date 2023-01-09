@@ -9,50 +9,46 @@
   <script defer src="app.js"></script>
 </head>
 <body>
-  <h1>Calculadora JS</h1>
-
-  <section>
-
-    <div id="res">
- 
-    </div>
-
-    <table>
-      <tr>
-        <td><button class="btn" onclick="clean()">c</button></td>
-        <td><button id="back" class="btn" onclick="backspace()">⌫</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">/</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">*</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" onclick="insert(this.innerText)">7</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">8</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">9</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">+</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" onclick="insert(this.innerText)">4</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">5</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">6</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">-</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" onclick="insert(this.innerText)">1</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">2</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">3</button></td>
-        <td rowspan="2"><button id="igual" class="btn" onclick="calc()">=</button></td>
-      </tr>
-      <tr>
-        <td colspan="2"><button id="zero" class="btn" onclick="insert(this.innerText)">0</button></td>
-        <td><button class="btn" onclick="insert(this.innerText)">.</button></td>
-      </tr>
-    </table>
-
+  <main>
+    <h1>Calc(h)</h1>
+    <section>
+      <div id="res">
+      </div>
+      <table>
+        <tr>
+          <td><button class="btn" onclick="clean()">c</button></td>
+          <td><button id="back" class="btn" onclick="backspace()">⌫</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">/</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn" onclick="insert(this.innerText)">7</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">8</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">9</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn" onclick="insert(this.innerText)">4</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">5</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">6</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn" onclick="insert(this.innerText)">1</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">2</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">3</button></td>
+          <td rowspan="2"><button id="igual" class="btn" onclick="calc()">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button id="zero" class="btn" onclick="insert(this.innerText)">0</button></td>
+          <td><button class="btn" onclick="insert(this.innerText)">.</button></td>
+        </tr>
+      </table>
     
-  </section>
-
-  <footer>
-    Site desenvolvido por <a href="https://github.com/HerbertDuarte">Herbert Duarte</a>
-  </footer>
+    </section>
+    <footer>
+      Site desenvolvido por <a href="https://github.com/HerbertDuarte">Herbert Duarte</a>
+    </footer>
+  </main>
 </body>
 </html>
